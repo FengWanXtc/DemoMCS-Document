@@ -1,3 +1,3 @@
-# 2.4 Function——functionlib
+# 3.4 Function——functionlib
 > To be complete
 > ..

@@ -1,4 +1,4 @@
-2.Scripts API
+3.Scripts API
 =================================
 
 .. toctree::

@@ -1,6 +1,6 @@
-# 2.2 Mediadevice——mediadevicelib
+# 3.2 Mediadevice——mediadevicelib
 
-## 2.2.1 get_md_audio_in
+## 3.2.1 get_md_audio_in
 
 - 描述： 用于获取边缘设备上 **音频输入** 子信息系统，对应 MA 文档 **<font color=#00CD00>GET</font>** **`/mediadevice/audio/in`** 接口
 - 输入参数说明
@@ -39,7 +39,7 @@
   +-----------+------------------------------------+-------------------------------------+
   ```
 
-## 2.2.2 get_md_audio_out
+## 3.2.2 get_md_audio_out
 - 描述： 用于获取边缘设备上 **音频输出** 子信息系统，对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/audio/out`** 接口
 - 输入参数说明
@@ -79,7 +79,7 @@ GET</font>** **`/mediadevice/audio/out`** 接口
   +-----------+-----------------------------------------+------------------------------------------+
   ```
   
-## 2.2.3 get_md_video_in
+## 3.2.3 get_md_video_in
 
 - 描述： 用于获取边缘设备上 **视频输入** 子信息系统，对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/video/in`** 接口
@@ -106,7 +106,7 @@ GET</font>** **`/mediadevice/video/in`** 接口
   +------------+-----------+--------------+---------+----------------------+
   ```
   
-## 2.2.4 get_md_video_out
+## 3.2.4 get_md_video_out
 
 - 描述： 用于获取边缘设备上 **视频输出** 子信息系统，对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/video/out`** 接口
@@ -131,7 +131,7 @@ GET</font>** **`/mediadevice/video/out`** 接口
   +--------------+-----------+--------------------+---------+
   ```
 
-## 2.2.5 get_md_audio_in_capability
+## 3.2.5 get_md_audio_in_capability
 
 - 描述： 用于获取边缘设备 **音频采集** 的能力列表。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/audio/in/capability`** 接口
@@ -158,7 +158,7 @@ GET</font>** **`/mediadevice/audio/in/capability`** 接口
   +---------------+---------------+------------------------------------+---------+-----------------+------------------------+
   ```
 
-## 2.2.6 get_md_audio_in_capability
+## 3.2.6 get_md_audio_in_capability
 
 - 描述： 用于获取边缘设备 **音频播放** 的能力列表。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/audio/out/capability`** 接口
@@ -194,7 +194,7 @@ GET</font>** **`/mediadevice/audio/out/capability`** 接口
   +-----------+---------------+----------+--------+
   ```
 
-## 2.2.7 get_md_video_in_capability
+## 3.2.7 get_md_video_in_capability
 
 - 描述： 用于获取边缘设备 **视频采集** 的能力列表。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/video/in/capability`** 接口
@@ -259,7 +259,7 @@ GET</font>** **`/mediadevice/video/in/capability`** 接口
   +-----------+-----------+----------+---------------+---------+--------+-------------------------+
   ```
 
-## 2.2.8 get_md_video_out_capability
+## 3.2.8 get_md_video_out_capability
 
 - 描述： 用于获取边缘设备 **视频输出** 的能力列表。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/video/out/capability`** 接口
@@ -284,7 +284,7 @@ GET</font>** **`/mediadevice/video/out/capability`** 接口
   +-----------+-------+--------+
   ```
 
-## 2.2.9 get_md_video_out_background
+## 3.2.9 get_md_video_out_background
 
 - 描述： 获取边缘设备 **视频输出** 子系统的永久背景设置。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/video/out/background`** 接口
@@ -309,7 +309,7 @@ GET</font>** **`/mediadevice/video/out/background`** 接口
   +-----------+------------+
   ```
 
-## 2.2.10 get_md_list
+## 3.2.10 get_md_list
 - 描述： 用于获取边缘设备上所有 **音、视频输入** 子系统信息。对应 MA 文档 **<font color=#00CD00>GET
 </font>** **`/mediadevice/list`** 接口。该接口调用相当于一次调用 **<font color=#00CD00>GET
 </font>** **`mediadevice/audio/in`**,**<font color=#00CD00>GET</font>** **`mediadevice/audio/out`**,**<font color=#00CD00>
@@ -382,7 +382,7 @@ GET</font>** **`mediadevice/video/in`**,**<font color=#00CD00>GET</font>** **`me
   +--------------+-----------+--------------------+---------+
   ```
 
-## 2.2.11 get_audio_in_configuration
+## 3.2.11 get_audio_in_configuration
 
 - 描述： 获取边缘设备 **音频输入** 子系统的永久配置信息。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/audio/in/configuration`** 接口
@@ -415,7 +415,7 @@ GET</font>** **`/mediadevice/audio/in/configuration`** 接口
   +-----------+--------+-------+
   ```
 
-## 2.2.12 get_audio_out_configuration
+## 3.2.12 get_audio_out_configuration
 
 - 描述： 获取边缘设备 **音频输出** 子系统的永久配置信息。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/audio/out/configuration`** 接口
@@ -449,7 +449,7 @@ GET</font>** **`/mediadevice/audio/out/configuration`** 接口
   +-----------+--------+-------+
   ```
 
-## 2.2.13 get_md_director_strategy
+## 3.2.13 get_md_director_strategy
 
 - 描述： 获取边缘设备当前存储的导播策略信息。对应 MA 文档 **<font color=#00CD00>
 GET</font>** **`/mediadevice/director-strategy`** 接口

@@ -1,7 +1,6 @@
 # 1.1 小站IP地址设置
-MCS目录下存在libraries目录，该目录下存放5个py文件. <br>
-其中
-`mediatasklib.py 、mediadevicelib.py 、mediatasklib.py`
+MCS目录下存在libraries目录，该目录下存放5个py文件。其中 <br>
+`mediatasklib.py` 、`mediadevicelib.py` 、`mediatasklib.py`
 三个库文件封装了对应的3个MA API接口类函数。<br>
 `functionlib.py`封装了一些便于开发的函数。<br>
 `environment.py`文件设定运行脚本需要的一些环境变量。<br>
@@ -38,7 +37,7 @@ def check_eth_connect():
 
   在终端输入下述指令安装环境
 
-  ```
+  ```shell
     # Linux系统执行下句
     $ python set_environment_linux.py
      
