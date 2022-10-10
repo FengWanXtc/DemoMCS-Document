@@ -10,8 +10,8 @@ MCS的功能。
 .. seealso::
 
     如果为了快速上手 **MCS** ，可以直接阅读第4章节 :doc:`Scenario <../scenarios/index>` 。
-    如果想了解 **MA API** 并按照自己方式对接口进行封装使用，可以参考第3章节 :doc:`Scripts API <../api/index>` 。
-
+    如果想了解 **MA API** 并按照自己方式对接口进行封装使用，可以参考第3章节 :doc:`Scripts API <../api/index>` ，
+    **MA API** 文档可以在第5章节 :doc:`FAQs <../FAQs/index>` 下载。
 
 1.2. 目的
 ---------

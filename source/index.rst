@@ -13,6 +13,7 @@ DemoMCS 用户文档
    environment/index
    api/index
    scenarios/index
+   FAQs/index
 
 
 Indices and tables
