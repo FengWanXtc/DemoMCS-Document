@@ -1,11 +1,16 @@
 1.1. 概述
 ---------
+DemoMCS是演示如何使用MA/MCS API触发Metis Station进行各种工作及其组合的Python脚本。
+与MCS定义一样，它可以使Metis Station进行捕获、AI处理、记录、解码、编码、推/拉流、回放和预览。
+
+DemoMCS不仅是一个面向半自动测试套件的演示脚本，也是一个帮助最终用户(RD或Tester)
+理解如何使用ESWIN MCS restful API和MA API的应用程序。
 
 本文作为 DemoMCS 的使用手册，目标是为了满足客户了解 **MA API** 及
 **MCS** 的使用，观看 Metis Station 功能演示，同时辅助进行功能测试的需求.
 为了使用MA接口，我们需要借助Postman工具，同时还要花费很多时间去理解以及编写下发的MCS
-Json文件，借助DemoMCS脚本与该手册，可以了解 快速了解MA API 与
-MCS的功能。
+Json文件，借助DemoMCS脚本与该手册，可以快速了解 **MA API** 与
+**MCS** 的功能。
 
 .. seealso::
 
