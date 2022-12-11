@@ -1,4 +1,4 @@
-3.Scripts API
+4.Scripts API
 =================================
 操作系统：Windows/Linux
 
@@ -6,7 +6,7 @@
 
 引入模块库： requests、prettytable、paramiko
 
-脚本存放路径： /home/user/EST/MCSScripts/DemoMCS_V0.3/
+脚本存放路径： /home/user/EST/MCSScripts/Metis-MCS_V0.3/
 
 ----------------------------------------------------------------------------
 

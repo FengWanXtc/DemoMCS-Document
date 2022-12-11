@@ -1,4 +1,4 @@
-# 1.1 小站IP地址设置
+# 3.1. 小站IP地址设置
 MCS目录下存在libraries目录，该目录下存放5个py文件。其中 <br>
 `mediatasklib.py` 、`mediadevicelib.py` 、`mediatasklib.py`
 三个库文件封装了对应的3个MA API接口类函数。<br>
@@ -6,6 +6,8 @@ MCS目录下存在libraries目录，该目录下存放5个py文件。其中 <br>
 `environment.py`文件设定运行脚本需要的一些环境变量。<br>
 
 ```python
+import sys
+import os
 # 设置对应小站IP函数
 def check_eth_connect():
     ip_get_cmd = "ifconfig eth0 | grep 'inet ' | awk '{print $2}'"
@@ -28,10 +30,10 @@ def check_eth_connect():
 ```
 
 如上述所说，脚本在**Windows**上运行,需要修改该`environment.py`文件上述变量 `HOST_IP` 的值，将其修改成需要运行脚本的小站IP地址，
-如果脚本放在**小站**上运行，可以自动获取小站的IP，不用修改任何文件。
+如果脚本放在*vcf*小站**上运行，可以自动获取小站的IP，不用修改任何文件。
 
-# 1.2 脚本运行环境设置
-- **方式一**： DemoMCS目录下存放`set_environment_linux.py`，`set_environment_windows` 脚本，对应不同操作系统下Python模块库的安装方式。
+# 3.2. 脚本运行环境设置
+- **方式一**： Metis-MCS目录下存放`set_environment_linux.py`，`set_environment_windows` 脚本，对应不同操作系统下Python模块库的安装方式。
   - **优点**：执行方式简单
   - **缺点**：会修改Linux系统环境，将 python 软链接指向 python3 而不是 python2。
 
@@ -65,9 +67,9 @@ def check_eth_connect():
   成功下载后，运行Docker容器
 
   ```shell
-  $ docker run -it --net=host -v /home/user/EST/MCSScripts/DemoMCS:/home sameswinhub/sam-story-python:1.0
+  $ docker run -it --net=host -v /home/user/EST/MCSScripts/Metis-MCS:/home sameswinhub/sam-story-python:1.0
   $ cd /home
-  $ ls  # 可以看到小站中所存放的所有的DemoMCS的脚本目录
+  $ ls  # 可以看到小站中所存放的所有的Metis-MCS的脚本目录
   ```
   到这里之后用户就可以自由进入想要测试的目录下进行执行需要的脚本了，可以通过输入 **exit** 退出Docker容器，回到小站Linux系统。
 

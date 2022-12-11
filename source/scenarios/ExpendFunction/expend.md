@@ -1,4 +1,4 @@
-## 4.0.1. LogFile功能
+## 5.0.1. LogFile功能
 
 Log File 设计：  
 - 脚本路径： **/home/user/Metis-MCS/03_Scenario_Driven_Tests/ ``GeneralCtrl.py``**  
@@ -13,6 +13,6 @@ Log File 设计：
     - Linux 系统：/home/user/Metis-MCS/MCS_Log
     - Windows系统：为运行的脚本所在的路径
 
-## 4.0.2. Others
+## 5.0.2. Others
 
     To Be Designed...

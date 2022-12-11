@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'DemoMCS Document'
+project = 'Meits-MCS Document'
 copyright = '2022, Thian Xtc'
 author = 'Thian Xtc'
 release = '0.1'

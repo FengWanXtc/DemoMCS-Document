@@ -1,7 +1,7 @@
-5.3. S1E3
+2.快速上手
 =================================
 
 .. toctree::
    :maxdepth: 2
 
-   S1E3.md
+   quick_start.md

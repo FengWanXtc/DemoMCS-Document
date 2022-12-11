@@ -1,6 +1,6 @@
-# 3.1 Auth——authlib
+# 4.1 Auth——authlib
 
-## 3.1.1 post_auth
+## 4.1.1 post_auth
 
 - 描述： 用于向Media Agent认证，以获得后续操作的令牌。对应 MA 文档 **<font color=#FF7F00>POST</font>** **`/auth`** 接口
 - 输入参数说明

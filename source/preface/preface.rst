@@ -1,36 +1,40 @@
 1.1. 概述
 ---------
-DemoMCS是演示如何使用MA/MCS API触发Metis Station进行各种工作及其组合的Python脚本。
-与MCS定义一样，它可以使Metis Station进行捕获、AI处理、记录、解码、编码、推/拉流、回放和预览。
+Metis-MCS是演示如何使用MCS 与MA API触发Metis Station进行各种工作及其组合的Python脚本，它可以使Metis Station进行捕获、
+AI处理、记录、解码、编码、推/拉流、回放和预览。
+Metis-MCS不仅是一个面向半自动测试套件的演示脚本，也是一个帮助使用者理解如何使用ESWIN
+MCS restful API的工具。
 
-DemoMCS不仅是一个面向半自动测试套件的演示脚本，也是一个帮助最终用户(RD或Tester)
-理解如何使用ESWIN MCS restful API和MA API的应用程序。
-
-本文作为 DemoMCS 的使用手册，目标是为了满足客户了解 **MA API** 及
+本文作为 Metis-MCS 的使用手册，目标是为了满足使用者了解 **MA API** 及
 **MCS** 的使用，观看 Metis Station 功能演示，同时辅助进行功能测试的需求.
 为了使用MA接口，我们需要借助Postman工具，同时还要花费很多时间去理解以及编写下发的MCS
-Json文件，借助DemoMCS脚本与该手册，可以快速了解 **MA API** 与
+Json文件，借助Metis-MCS脚本与该手册，可以快速了解 **MA API** 与
 **MCS** 的功能。
 
 .. seealso::
+    缩写解释
+     MCS：Media Compose Spec,用于多媒体处理和AI服务的完整JSON数据结构
 
-    如果为了快速上手 **MCS** ，可以直接阅读第4章节 :doc:`Scenario <../scenarios/index>` 。
+     MA:Media Agent，接收消息并交给小站处理的中间介质。
+    如果为了快速上手 **MCS** ，
+    可以直接阅读第2章节， 同时第4章节 :doc:`Scenario <../scenarios/index>` \
+    里有许多场景测试使用的MCS，可以用于参考。x
     如果想了解 **MA API** 并按照自己方式对接口进行封装使用，可以参考第3章节 :doc:`Scripts API <../api/index>` ，
     **MA API** 文档可以在第5章节 :doc:`FAQs <../FAQs/index>` 下载。
+
 
 1.2. 目的
 ---------
 
--  1.当 Metis Live
-   遇到问题阻塞，新版本未发布，作为替代Postman调试的工具。同时也是为了丰富
-   Metis Live， 作为一种补充，使用不同的MA API。
+-  1.
+   为了丰富Metis Live演示， 作为一种补充，使用不同的MA API。
 
--  2.可以提供给客户展示，以故事脚本的形式调用MA
+-  2.可以提供Demo展示，以故事脚本的形式调用MA
    API，通过不同的组合（AI、录制、宫格切换等）体现MA
    API的优越性与灵活性。
 
--  3.方便SV
-   Team对新版本进行快速的冒烟测试，及时发现新版本引入的问题，同时也包含了很多脚本用于回归性测试，
+-  3.方便功能测试
+   对新版本进行快速的冒烟测试，及时发现新版本引入的问题，同时也包含了很多脚本用于回归性测试，
    极大缩短了利用Postman去一个个下发MCS进行测试的时间。
 
 1.3. 脚本目录结构安排
@@ -45,7 +49,7 @@ Json文件，借助DemoMCS脚本与该手册，可以快速了解 **MA API** 与
 -  **MA_API_Basic_Tests** : 该目录下存放基础的接口API测试，每个脚本与
    **Libraries** 目录下 ``mediadevicelib.py``
    里的接口函数一一对应，将返回的结果以表格的形式打印出来。 详情可参考 :doc:`3.2章节 <../api/mediadevice>`
-   DemoMCS演示效果。
+   Metis-MCS演示效果。
 
 -  **SV_Interface_Tests** : 该目录下存放的是对于 **MA** 各个接口 以及
    **MCS** 各个Spec 的拓展测试，包含接口并发，MCS并发等内容。
